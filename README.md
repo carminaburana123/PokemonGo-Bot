@@ -1,28 +1,20 @@
 <p align="center">
   <a href="">
-    <img alt="Logo" src="https://www.brooklinelibrary.org/wp-content/uploads/2016/07/2000px-Pok%C3%A9_Ball.svg_-1.png" width="100">
+    <img alt="Logo" src="http://pre11.deviantart.net/e398/th/pre/f/2012/284/0/0/_charizard__by_arvalis-d5hh5md.jpg" width="1000">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://pokemongo-bot.herokuapp.com/"><img alt="Slack" src="https://pokemongo-bot.herokuapp.com/badge.svg"></a>
+  <a href="https://pokemongo-bot.herokuapp.com/"><img alt="Slack" src="https://s19.postimg.org/ygftv5rhv/Vak213_Devils.png" width="100"></a>
 </p>
 
 # PokemonGo-Bot
-The Pokemon Go Bot, baking with community.
+The Pokemon Go Bot, baking with community. This version is made by Carmina.burana123. Only minor changes have been made. 
 
-## Project Chat
-We use [Slack](https://slack.com) as a web chat. [Click here to join the chat!](https://pokemongo-bot.herokuapp.com)
-## Breaking Changes
-You need modify config.json (config.json.example for example) then pokecli.py --config config.json 
-Please clean up your old clone if you have issue, and following the [install instruction](https://github.com/PokemonGoF/PokemonGo-Bot#installation).
-
-## About dev/master Branch
-Dev branch has most up to date feature and even everyone handle the part well, still, will have broken changes. Your test contribute and PR for fix are warm welcome. 
-Master branch is the stable branch.  
-No PR on master branch to keep things easier.  
 ## Table of Contents
+- [Table of content](#table-of-contents)
 - [Project Chat](#project-chat)
+- [Changes](#changes)
 - [Features](#features)
 - [TODO List](#todo-list)
 - __Installation__
@@ -37,32 +29,77 @@ No PR on master branch to keep things easier.
 - [Credits](#credits)
 - [Donation](#donation)
 
-## Features
- * Search Fort (Spin Pokestop)
- * Catch Pokemon
- * Release low cp pokemon
- * Walking as you
- * Limit the step to farm specific area for pokestops
- * Use the ball you have to catch, don't if you don't have
- * Rudimentary IV Functionality filter
- * Auto switch mode(Full of item then catch, no ball useable then farm)
- * Ignore certain pokemon filter
- * Use superior ball types when necessary
- * When out of normal pokeballs, use the next type of ball unless there are less than 10 of that type, in which case switch to farm mode
- * Drop items when bag is full (In Testing, Document contribute needed)
- * Pokemon catch filter (In Testing, Document contribute needed)
- * Google Map API key setup (Readme update needed)
- * Show all objects on map (In Testing)
- * Evolve pokemons (Code in, Need input, In Testing)
+## Project Chat
+We use [Slack](https://slack.com) as a web chat. [Click here to join the chat!](https://pokemongo-bot.herokuapp.com)  
 
-## TODO List
+If any problems with my version that doesn't occur with the PokemonGo-Bot version you can contact me on that chat: my username is "LisaWood"
 
-- [ ] Standalone Desktop APP
-- [ ] Pokemon transfer filter ?? This already done, right?
-- [ ] Hatch eggs
-- [ ] Incubate eggs
-- [ ] Use candy
-- [ ] Fight Gym
+## Changes
+
+You **need** modify the files tagged with **[required]**  
+If you want special rules for catching pokemon (release pokemon, keep pokemon, combat power lvl, pokemon potential) change the files tagged with **[optional]**
+
+- **[required]**...\PokemonGo-Bot-master\UserData\Account1\config.json
+- **[required]**...\PokemonGo-Bot-master\Run.bat
+- **[optional]**...\PokemonGo-Bot-master\UserData\Account1\release_config.json
+
+To work with multiple accounts you will have to add and edit some files (tagged with **[mult acc]**) in the *UserData* file they need to contain: 
+
+- **[mult acc]**...\PokemonGo-Bot-master\UserData\Account2\config.json
+- **[mult acc]**...\PokemonGo-Bot-master\UserData\Account2\release_config.json
+- **[mult acc]**...\PokemonGo-Bot-master\Run.bat
+
+To run multiple accounts simultanious
+
+- ...\PokemonGo-Bot-master\UserData\Account2\config.json
+
+Please clean up your old clone if you have issue, and following the [install instruction](https://github.com/PokemonGoF/PokemonGo-Bot#installation) down below.
+
+I made this to add some minor changes to a already very good project. I will also keep up with any changes they make but i keep my additions. 
+
+
+
+## To-Do/Done List
+ * <font size="3" color="green">**☑**</font> 	Search Fort (Spin Pokestop)
+ * <font size="3" color="green">**☑**</font> 	Catch Pokemon
+ * <font size="3" color="green">**☑**</font> 	Release low cp pokemon
+ * <font size="3" color="green">**☑**</font> 	Walking as you
+ * <font size="3" color="green">**☑**</font> 	Limit the step to farm specific area for pokestops
+ * <font size="3" color="green">**☑**</font> 	Use the ball you have to catch, don't if you don't have
+ * <font size="3" color="green">**☑**</font> 	Rudimentary IV Functionality filter
+ * <font size="3" color="green">**☑**</font> 	Auto switch mode(Full of item then catch, no ball useable then farm)
+ * <font size="3" color="green">**☑**</font> 	Ignore certain pokemon filter
+ * <font size="3" color="green">**☑**</font> 	Use superior ball types when necessary
+ * <font size="3" color="green">**☑**</font> 	When out of normal pokeballs, use the next type of ball unless there are less than 10 of that type, in which case switch to farm mode
+ * <font size="3" color="green">**☑**</font> 	Drop items when bag is full (In Testing, Document contribute needed)
+ * <font size="3" color="green">**☑**</font> 	Pokemon catch filter (In Testing, Document contribute needed)
+ * <font size="3" color="green">**☑**</font> 	Google Map API key setup (Readme update needed)
+ * <font size="3" color="green">**☑**</font> 	Show all objects on map (In Testing)
+ * <font size="3" color="green">**☑**</font> 	Evolve pokemons (Code in, Need input, In Testing)
+ * <font size="3" color="green">**☑**</font> 	Pokemon transfer filter
+ * <font size="3" color="green">**☑**</font> 	Hatch eggs
+ * <font size="3" color="green">**☑**</font> 	Run.bat file
+	 * <font size="3" color="green">**☑**</font> 	Easy account switching
+	 * <font size="3" color="green">**☑**</font> 	Easy location switching
+	 * <font size="3" color="green">**☑**</font> 	Loop restart (normal bot stops)
+	 * <font size="3" color="red">**☐**</font> 		multiple accounts simulatanious
+ * <font size="3" color="red">**☐**</font> 		Standalone Desktop APP
+ * <font size="3" color="red">**☐**</font> 		Incubate eggs
+ * <font size="3" color="red">**☐**</font> 		Use candy
+ * <font size="3" color="red">**☐**</font> 		Fight Gym
+ * <font size="3" color="red">**☐**</font> 		add easy set up
+ * <font size="3" color="red">**☐**</font> 		Complete Readme.md
+	 * <font size="3" color="red">**☐**</font> 		How to install
+	 	* <font size="3" color="red">**☐**</font> 		requirements
+	 	* <font size="3" color="red">**☐**</font> 		optional additions
+	 	* <font size="3" color="red">**☐**</font> 		windows
+	 	* <font size="3" color="red">**☐**</font> 		Linux
+	 	* <font size="3" color="red">**☐**</font> 		Mac
+	 	* <font size="3" color="red">**☐**</font> 		Raspberry Pi
+	 * <font size="3" color="red">**☐**</font> 		How to configure normal
+	 * <font size="3" color="red">**☐**</font> 		How to configure multiple accoutnts
+	 * <font size="3" color="red">**☐**</font> 		How to configure multiple accoutnts simultanious
+	 * <font size="3" color="red">**☐**</font> 		How to work with a map api
 
 ## Installation
 
@@ -337,6 +374,7 @@ If using multiple usernames format like this:
  * riberod07
  * th3w4y
  * Leaklessgfy
+ * Carmina.burana123
  
 -------
 ## Credits
@@ -345,12 +383,5 @@ If using multiple usernames format like this:
 - [elliottcarlson](https://github.com/elliottcarlson) for the Google Auth PR
 - [AeonLucid](https://github.com/AeonLucid/POGOProtos) for improved protos
 - [AHAAAAAAA](https://github.com/AHAAAAAAA/PokemonGo-Map) for parts of the s2sphere stuff
+- [PokemonGoF](https://github.com/PokemonGoF/PokemonGo-Bot) the initial bot
 
-
-## Donation
-
-Bitcoin Address:  1PJMCx9NNQRasQYaa4MMff9yyNFffhHgLu
-
-<p align="center">
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WQUXDC54W6EVY"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"></a>
-</p>
