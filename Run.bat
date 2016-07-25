@@ -130,7 +130,15 @@ rem 	When done REMOVE THE ARROWS (->)
 ->	if %m% equ 8 ( ReplaceText C:\...\PokemonGo-Bot-master\config.json unknown "ADRESS_8")
 	
 :botstart
-->	"C:\...\python.exe" "C:\...\Bot\pokecli.py" -cf "C:\PokemonGo\PokemonGoBot\config.json"
+	:loop
+->		start "PokemonGoBot" cmd.exe @cmd /k "title PokemonGoBot & "C:\...\python.exe" "C:\...\Bot\pokecli.py" -cf "C:\PokemonGo\PokemonGoBot\config.json""
+rem		You can use multiple instances if you rename the config file. So you have to generate multiple config files. 
+rem		start "PokemonGoBot" cmd.exe @cmd /k "title PokemonGoBot & "C:\...\python.exe" "C:\...\Bot\pokecli.py" -cf "C:\PokemonGo\PokemonGoBot\other_config.json""
+		timeout /t 3600 >nul
+		tasklist /fi "WINDOWTITLE eq pokemongobot*"
+		taskkill /fi "WINDOWTITLE eq pokemongobot*"
+		timeout /t 5 >nul
+		goto loop
 	pause
 	
 :colorEcho
